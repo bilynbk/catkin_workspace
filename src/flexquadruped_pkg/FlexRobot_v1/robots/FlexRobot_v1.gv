@@ -1,0 +1,32 @@
+digraph G {
+node [shape=box];
+"FrontBody" [label="FrontBody"];
+"BackBody" [label="BackBody"];
+"RearBodyLeftLeg_Hip" [label="RearBodyLeftLeg_Hip"];
+"RearBodyLeftLeg_Knee" [label="RearBodyLeftLeg_Knee"];
+"RearBodyRightLeg_Hip" [label="RearBodyRightLeg_Hip"];
+"RearBodyRightLeg_Knee" [label="RearBodyRightLeg_Knee"];
+"FrontLeftLeg_Hip" [label="FrontLeftLeg_Hip"];
+"FrontLeftLeg_Knee" [label="FrontLeftLeg_Knee"];
+"FrontRightLeg_Hip" [label="FrontRightLeg_Hip"];
+"FrontRightLeg_Knee" [label="FrontRightLeg_Knee"];
+node [shape=ellipse, color=blue, fontcolor=blue];
+"FrontBody" -> "BodyJoint" [label="xyz: -0.40775 0.083439 0.36531 \nrpy: 8.4741e-33 1.7347e-16 2.4652e-32"]
+"BodyJoint" -> "BackBody"
+"BackBody" -> "RearBodyLeftLeg_Hip_Joint" [label="xyz: 0.23 -0.010979 0 \nrpy: 5.3926e-33 -0 2.4652e-32"]
+"RearBodyLeftLeg_Hip_Joint" -> "RearBodyLeftLeg_Hip"
+"RearBodyLeftLeg_Hip" -> "RearBodyLeftLeg_Knee" [label="xyz: 0.1035 -0.09196 -0.1336 \nrpy: 5.3926e-33 -0 2.4652e-32"]
+"RearBodyLeftLeg_Knee" -> "RearBodyLeftLeg_Knee"
+"BackBody" -> "RearBodyRightLeg_Hip" [label="xyz: 0.23 -0.010979 0 \nrpy: 5.3926e-33 -0 2.4652e-32"]
+"RearBodyRightLeg_Hip" -> "RearBodyRightLeg_Hip"
+"RearBodyRightLeg_Hip" -> "RearBodyRightLeg_Knee" [label="xyz: 0.099654 0.11296 -0.13649 \nrpy: 5.3926e-33 -0 2.4652e-32"]
+"RearBodyRightLeg_Knee" -> "RearBodyRightLeg_Knee"
+"FrontBody" -> "FrontLeftLeg_Hip_Joint" [label="xyz: -0.56254 0.07246 0.35731 \nrpy: 8.4741e-33 1.7347e-16 2.4652e-32"]
+"FrontLeftLeg_Hip_Joint" -> "FrontLeftLeg_Hip"
+"FrontLeftLeg_Hip" -> "FrontLeftLeg_Knee_joint" [label="xyz: -0.056771 -0.09196 -0.15918 \nrpy: 5.3926e-33 5.5511e-17 2.4652e-32"]
+"FrontLeftLeg_Knee_joint" -> "FrontLeftLeg_Knee"
+"FrontBody" -> "FrontRightLeg_Hip_Joint" [label="xyz: -0.56254 0.07246 0.35731 \nrpy: 8.4741e-33 1.7347e-16 2.4652e-32"]
+"FrontRightLeg_Hip_Joint" -> "FrontRightLeg_Hip"
+"FrontRightLeg_Hip" -> "FrontRightLeg_Knee_Joint" [label="xyz: -0.056589 0.11246 -0.15924 \nrpy: 5.3926e-33 5.5511e-17 2.4652e-32"]
+"FrontRightLeg_Knee_Joint" -> "FrontRightLeg_Knee"
+}

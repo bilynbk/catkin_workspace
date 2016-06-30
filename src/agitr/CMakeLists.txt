@@ -123,7 +123,15 @@ catkin_package(
 
 ## Declare a C++ executable
 #add_executable(agitr_node src/agitr_node.cpp)
+   add_executable(set_bg_color set_bg_color.cpp)
+   add_executable(pubvel_with_max pubvel_with_max.cpp)
+   add_executable(reverse_cmd_vel reverse_cmd_vel.cpp)
+   add_executable(throttle throttle.cpp)
+   add_executable(once once.cpp)
+   add_executable(count count.cpp)
+   add_executable(subpose subpose.cpp)
    add_executable(pubvel pubvel.cpp)
+   add_executable(hello hello.cpp)
 
 ## Add cmake target dependencies of the executable
 ## same as for the library above
@@ -133,7 +141,15 @@ catkin_package(
 # target_link_libraries(agitr_node
 #   ${catkin_LIBRARIES}
 # )
+  target_link_libraries(subpose ${catkin_LIBRARIES})
   target_link_libraries(pubvel ${catkin_LIBRARIES})
+  target_link_libraries(hello ${catkin_LIBRARIES})
+  target_link_libraries(count ${catkin_LIBRARIES})
+  target_link_libraries(once ${catkin_LIBRARIES})
+  target_link_libraries(throttle ${catkin_LIBRARIES})
+  target_link_libraries(reverse_cmd_vel ${catkin_LIBRARIES})
+  target_link_libraries(set_bg_color ${catkin_LIBRARIES})
+  target_link_libraries(pubvel_with_max ${catkin_LIBRARIES})
 
 #############
 ## Install ##

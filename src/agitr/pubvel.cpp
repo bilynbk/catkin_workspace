@@ -1,4 +1,4 @@
-// This program publishes randomly-generated velocity messages for turtlesim
+// This program publishes randomly-generated velocity messages for turtlesim, work on Mac.
 #include<ros/ros.h>
 #include<geometry_msgs/Twist.h>  // for geometry_msgs::Twist
 #include<stdlib.h>               // for rand() and RAND_MAX

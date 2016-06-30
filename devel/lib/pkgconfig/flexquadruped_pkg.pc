@@ -1,0 +1,8 @@
+prefix=/home/bilynbk/catkin_ws/devel
+
+Name: flexquadruped_pkg
+Description: Description of flexquadruped_pkg
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/bilynbk/catkin_ws/devel/lib 
+Requires: 

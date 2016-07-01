@@ -1,2 +1,2 @@
-agitr:flexquadruped_pkg
+agitr:flexrobot_description_pkg
 -DCATKIN_DEVEL_PREFIX=/home/bilynbk/catkin_ws/devel -DCMAKE_INSTALL_PREFIX=/home/bilynbk/catkin_ws/install -G Unix Makefiles

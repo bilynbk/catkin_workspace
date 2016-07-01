@@ -5,5 +5,5 @@
 # This file includes the relevant testing commands required for 
 # testing this directory and lists subdirectories to be tested as well.
 SUBDIRS(gtest)
-SUBDIRS(flexquadruped_pkg)
 SUBDIRS(agitr)
+SUBDIRS(flexrobot_description_pkg)

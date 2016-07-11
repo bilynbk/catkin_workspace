@@ -1,0 +1,468 @@
+<?xml version="1.0" ?>
+<robot
+  name="FlexRobotwSupporter_v3_2">
+  <link
+    name="Supporter">
+    <inertial>
+      <origin
+        xyz="0.0038841 -0.11852 0.59184"
+        rpy="0 0 0" />
+      <mass
+        value="22.692" />
+      <inertia
+        ixx="2.9583"
+        ixy="-0.010899"
+        ixz="0.0082679"
+        iyy="3.7408"
+        iyz="-0.29135"
+        izz="1.6553" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://flexrobot_description_pkg/meshes/FlexRobotwSupporter_v3_2/Supporter.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://flexrobot_description_pkg/meshes/FlexRobotwSupporter_v3_2/Supporter.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="FrontLeftHip">
+    <inertial>
+      <origin
+        xyz="-0.028243 -0.091534 -0.067884"
+        rpy="0 0 0" />
+      <mass
+        value="0.23878" />
+      <inertia
+        ixx="0.00094745"
+        ixy="6.1379E-06"
+        ixz="0.00035842"
+        iyy="0.0011216"
+        iyz="1.4753E-05"
+        izz="0.00023513" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://flexrobot_description_pkg/meshes/FlexRobotwSupporter_v3_2/FrontLeftHip.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.89804 0.91765 0.92941 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://flexrobot_description_pkg/meshes/FlexRobotwSupporter_v3_2/FrontLeftHip.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="FrontLeftHipJoint"
+    type="continuous">
+    <origin
+      xyz="-0.18469 -0.25281 0.7952"
+      rpy="-1.7347E-16 0 0" />
+    <parent
+      link="Supporter" />
+    <child
+      link="FrontLeftHip" />
+    <axis
+      xyz="0 -1 0" />
+  </joint>
+  <link
+    name="FrontLeftKnee">
+    <inertial>
+      <origin
+        xyz="-0.015371 0.0195 -0.038435"
+        rpy="0 0 0" />
+      <mass
+        value="0.092493" />
+      <inertia
+        ixx="0.00021587"
+        ixy="-1.0659E-12"
+        ixz="0.00019602"
+        iyy="0.00049392"
+        iyz="-1.6503E-12"
+        izz="0.00028676" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://flexrobot_description_pkg/meshes/FlexRobotwSupporter_v3_2/FrontLeftKnee.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://flexrobot_description_pkg/meshes/FlexRobotwSupporter_v3_2/FrontLeftKnee.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="FrontLeftKneeJoint"
+    type="continuous">
+    <origin
+      xyz="-0.064919 -0.11196 -0.15603"
+      rpy="1.5025E-43 0 0" />
+    <parent
+      link="FrontLeftHip" />
+    <child
+      link="FrontLeftKnee" />
+    <axis
+      xyz="0 -1 0" />
+  </joint>
+  <link
+    name="FrontRightHip">
+    <inertial>
+      <origin
+        xyz="-0.028153 0.11153 -0.067976"
+        rpy="0 0 0" />
+      <mass
+        value="0.23878" />
+      <inertia
+        ixx="0.00094649"
+        ixy="-6.0913E-06"
+        ixz="0.00035778"
+        iyy="0.0011198"
+        iyz="-1.4901E-05"
+        izz="0.00023432" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://flexrobot_description_pkg/meshes/FlexRobotwSupporter_v3_2/FrontRightHip.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.89804 0.91765 0.92941 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://flexrobot_description_pkg/meshes/FlexRobotwSupporter_v3_2/FrontRightHip.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="FrontRightHipJoint"
+    type="continuous">
+    <origin
+      xyz="-0.18469 -0.25281 0.7952"
+      rpy="-1.7347E-16 0 0" />
+    <parent
+      link="Supporter" />
+    <child
+      link="FrontRightHip" />
+    <axis
+      xyz="0 -1 0" />
+  </joint>
+  <link
+    name="FrontRightKnee">
+    <inertial>
+      <origin
+        xyz="-0.015327 0.0195 -0.038453"
+        rpy="0 0 0" />
+      <mass
+        value="0.092493" />
+      <inertia
+        ixx="0.00021632"
+        ixy="-1.0642E-12"
+        ixz="0.00019611"
+        iyy="0.00049392"
+        iyz="-1.6516E-12"
+        izz="0.00028631" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://flexrobot_description_pkg/meshes/FlexRobotwSupporter_v3_2/FrontRightKnee.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://flexrobot_description_pkg/meshes/FlexRobotwSupporter_v3_2/FrontRightKnee.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="FrontRightKneeJoint"
+    type="continuous">
+    <origin
+      xyz="-0.06474 0.09296 -0.15611"
+      rpy="1.5025E-43 0 0" />
+    <parent
+      link="FrontRightHip" />
+    <child
+      link="FrontRightKnee" />
+    <axis
+      xyz="0 -1 0" />
+  </joint>
+  <link
+    name="RearLeftHip">
+    <inertial>
+      <origin
+        xyz="0.041967 -0.091534 -0.060371"
+        rpy="0 0 0" />
+      <mass
+        value="0.23878" />
+      <inertia
+        ixx="0.00076734"
+        ixy="-9.121E-06"
+        ixz="-0.00047363"
+        iyy="0.0011216"
+        iyz="1.312E-05"
+        izz="0.00041524" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://flexrobot_description_pkg/meshes/FlexRobotwSupporter_v3_2/RearLeftHip.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://flexrobot_description_pkg/meshes/FlexRobotwSupporter_v3_2/RearLeftHip.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="RearLeftHipJoint"
+    type="continuous">
+    <origin
+      xyz="0.2 -0.25281 0.78332"
+      rpy="-1.7347E-16 0 0" />
+    <parent
+      link="Supporter" />
+    <child
+      link="RearLeftHip" />
+    <axis
+      xyz="0 -1 0" />
+  </joint>
+  <link
+    name="RearLeftKnee">
+    <inertial>
+      <origin
+        xyz="0.024096 0.0195 -0.033659"
+        rpy="0 0 0" />
+      <mass
+        value="0.092493" />
+      <inertia
+        ixx="0.00044414"
+        ixy="9.8491E-13"
+        ixz="-5.0016E-05"
+        iyy="0.00049392"
+        iyz="-2.0129E-12"
+        izz="5.8496E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://flexrobot_description_pkg/meshes/FlexRobotwSupporter_v3_2/RearLeftKnee.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://flexrobot_description_pkg/meshes/FlexRobotwSupporter_v3_2/RearLeftKnee.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="RearLeftKneeJoint"
+    type="continuous">
+    <origin
+      xyz="0.096464 -0.11196 -0.13877"
+      rpy="1.5025E-43 0 0" />
+    <parent
+      link="RearLeftHip" />
+    <child
+      link="RearLeftKnee" />
+    <axis
+      xyz="0 -1 0" />
+  </joint>
+  <link
+    name="RearRightHip">
+    <inertial>
+      <origin
+        xyz="0.040287 0.11153 -0.061566"
+        rpy="0 0 0" />
+      <mass
+        value="0.23878" />
+      <inertia
+        ixx="0.00079364"
+        ixy="8.876E-06"
+        ixz="-0.00046206"
+        iyy="0.0011198"
+        iyz="-1.3429E-05"
+        izz="0.00038716" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://flexrobot_description_pkg/meshes/FlexRobotwSupporter_v3_2/RearRightHip.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.89804 0.91765 0.92941 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://flexrobot_description_pkg/meshes/FlexRobotwSupporter_v3_2/RearRightHip.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="RearRightHipJoint"
+    type="continuous">
+    <origin
+      xyz="0.2 -0.25281 0.78332"
+      rpy="-1.7347E-16 0 0" />
+    <parent
+      link="Supporter" />
+    <child
+      link="RearRightHip" />
+    <axis
+      xyz="0 -1 0" />
+  </joint>
+  <link
+    name="RearRightKnee">
+    <inertial>
+      <origin
+        xyz="0.023127 0.0195 -0.034332"
+        rpy="0 0 0" />
+      <mass
+        value="0.092493" />
+      <inertia
+        ixx="0.00044668"
+        ixy="9.2967E-13"
+        ixz="-3.8948E-05"
+        iyy="0.00049392"
+        iyz="-2.0558E-12"
+        izz="5.596E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://flexrobot_description_pkg/meshes/FlexRobotwSupporter_v3_2/RearRightKnee.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://flexrobot_description_pkg/meshes/FlexRobotwSupporter_v3_2/RearRightKnee.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="RearRightKneeJoint"
+    type="continuous">
+    <origin
+      xyz="0.09247 0.09296 -0.14146"
+      rpy="1.5025E-43 0 0" />
+    <parent
+      link="RearRightHip" />
+    <child
+      link="RearRightKnee" />
+    <axis
+      xyz="0 -1 0" />
+  </joint>
+</robot>

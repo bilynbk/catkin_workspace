@@ -1,0 +1,25 @@
+<launch>
+<!-- the arguments to pass the launch file -->
+	<arg name="paused" default="false"/>
+	<arg name="use_sim_time" default="true"/>
+	<arg name="gui" default="true"/>
+	<arg name="headless" default="false"/>
+	<arg name="debug" default="false"/>
+<!-- Resume the login in empty_world.launch -->
+	<include file="$(find gazebo_ros)/launch/empty_world.launch">
+		<arg name="debug" value="$(arg debug)"/>
+		<arg name="gui" value="$(arg gui)"/>
+		<arg name="paused" value="$(arg paused)"/>
+		<arg name="use_sim_time" value="$(arg use_sim_time)"/>
+		<arg name="headless" value="$(arg headless)"/>
+
+	</include>
+<!-- Load the URDF into the ROS parameter server -->
+	<param name="robot_description" textfile="$(find flexrobot_description_pkg)/urdf/FlexRobot_v1.URDF"/>
+
+	<node name="urdf_spawner" pkg="gazebo_ros" type="spawn_model" respawn="false" output="screen" 
+		arg="-urdf -model -FlexRobot_v1 -param robot_description"/>
+
+
+
+</launch>

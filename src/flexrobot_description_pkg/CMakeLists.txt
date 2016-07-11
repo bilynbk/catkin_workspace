@@ -7,14 +7,22 @@ project(flexrobot_description_pkg)
 find_package(catkin REQUIRED COMPONENTS
   geometry_msgs
   roscpp
+  rospy
   rviz
   tf
   urdf
   xacro
+  actionlib
+  actionlib_msgs
+  std_msgs
+  message_generation
+  gazebo_plugins
+  gazebo_ros
+  gazebo_ros_control
 )
 
 ## System dependencies are found with CMake's conventions
-# find_package(Boost REQUIRED COMPONENTS system)
+find_package(Boost REQUIRED COMPONENTS system)
 
 
 ## Uncomment this if the package has a setup.py. This macro ensures
@@ -47,31 +55,28 @@ find_package(catkin REQUIRED COMPONENTS
 ##   * add every package in MSG_DEP_SET to generate_messages(DEPENDENCIES ...)
 
 ## Generate messages in the 'msg' folder
-# add_message_files(
-#   FILES
-#   Message1.msg
-#   Message2.msg
-# )
+  add_message_files(
+    FILES
+    demo_msg.msg
+  )
 
 ## Generate services in the 'srv' folder
-# add_service_files(
-#   FILES
-#   Service1.srv
-#   Service2.srv
-# )
+ add_service_files(
+   FILES
+   demo_srv.srv
+ )
 
 ## Generate actions in the 'action' folder
-# add_action_files(
-#   FILES
-#   Action1.action
-#   Action2.action
-# )
+ add_action_files(
+   DIRECTORY action
+   FILES
+   Demo_action.action
+ )
 
 ## Generate added messages and services with any dependencies listed here
-# generate_messages(
-#   DEPENDENCIES
-#   geometry_msgs
-# )
+  generate_messages(
+    DEPENDENCIES geometry_msgs std_msgs actionlib_msgs
+  )
 
 ################################################
 ## Declare ROS dynamic reconfigure parameters ##
@@ -103,9 +108,9 @@ find_package(catkin REQUIRED COMPONENTS
 ## CATKIN_DEPENDS: catkin_packages dependent projects also need
 ## DEPENDS: system dependencies of this project that dependent projects also need
 catkin_package(
-#  INCLUDE_DIRS include
-#  LIBRARIES flexrobot_description_pkg
-#  CATKIN_DEPENDS geometry_msgs roscpp rviz tf urdf xacro
+  INCLUDE_DIRS include
+  LIBRARIES flexrobot_description_pkg
+  CATKIN_DEPENDS geometry_msgs roscpp rospy rviz tf urdf xacro std_msgs actionlib actionlib_msgs message_runtime
 #  DEPENDS system_lib
 )
 
@@ -117,7 +122,9 @@ catkin_package(
 ## Your package locations should be listed before other locations
 # include_directories(include)
 include_directories(
+  include
   ${catkin_INCLUDE_DIRS}
+  ${Boost_INCLUDE_DIRS}
 )
 
 ## Declare a C++ library
@@ -132,15 +139,35 @@ include_directories(
 
 ## Declare a C++ executable
 # add_executable(flexrobot_description_pkg_node src/flexrobot_description_pkg_node.cpp)
-
+add_executable(demo_topic_publisher src/demo_topic_publisher.cpp)
+add_executable(demo_topic_subscriber src/demo_topic_subscriber.cpp)
+add_executable(demo_msg_publisher src/demo_msg_publisher.cpp)
+add_executable(demo_msg_subscriber src/demo_msg_subscriber.cpp)
+add_executable(demo_service_server src/demo_service_server.cpp)
+add_executable(demo_service_client src/demo_service_client.cpp)
+add_executable(demo_action_server src/demo_action_server.cpp)
+add_executable(demo_action_client src/demo_action_client.cpp)
 ## Add cmake target dependencies of the executable
 ## same as for the library above
-# add_dependencies(flexrobot_description_pkg_node ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
+#add_dependencies(flexrobot_description_pkg_node ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
+add_dependencies(demo_topic_publisher ${flexrobot_description_pkg_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
+add_dependencies(demo_topic_subscriber ${flexrobot_description_pkg_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
+add_dependencies(demo_msg_publisher ${flexrobot_description_pkg_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
+add_dependencies(demo_msg_subscriber ${flexrobot_description_pkg_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
+add_dependencies(demo_service_server ${flexrobot_description_pkg_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
+add_dependencies(demo_service_client ${flexrobot_description_pkg_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
+add_dependencies(demo_action_server ${flexrobot_description_pkg_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
+add_dependencies(demo_action_client ${flexrobot_description_pkg_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
 
 ## Specify libraries to link a library or executable target against
-# target_link_libraries(flexrobot_description_pkg_node
-#   ${catkin_LIBRARIES}
-# )
+ target_link_libraries(demo_topic_publisher ${catkin_LIBRARIES})
+ target_link_libraries(demo_topic_subscriber ${catkin_LIBRARIES})
+ target_link_libraries(demo_msg_publisher ${catkin_LIBRARIES})
+ target_link_libraries(demo_msg_subscriber ${catkin_LIBRARIES})
+ target_link_libraries(demo_service_server ${catkin_LIBRARIES})
+ target_link_libraries(demo_service_client ${catkin_LIBRARIES})
+ target_link_libraries(demo_action_server ${catkin_LIBRARIES})
+ target_link_libraries(demo_action_client ${catkin_LIBRARIES})
 
 #############
 ## Install ##

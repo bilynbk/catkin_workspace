@@ -1,0 +1,29 @@
+<launch>
+  <!-- Launch Gazebo  -->
+  <include file="$(find flexrobot_description_pkg)/launch/view_FlexRobotwSupporter_v3_2_gazebo_xacro.launch" />   
+
+
+  <!-- Load joint controller configurations from YAML file to parameter server -->
+  <rosparam file="$(find flexrobot_description_pkg)/config/FlexRobotwSupporter_v3_2_gazebo_posCtrl.yaml" command="load"/>
+
+
+  <!-- load the controllers -->
+  <node name="controller_spawner" pkg="controller_manager" type="spawner" respawn="false"
+  output="screen" ns="/FlexRobotwSupporter_v3_2" args="joint_state_controller
+            FrontLeftHipJoint_position_controller
+            FrontLeftKneeJoint_position_controller
+            FrontRightHipJoint_position_controller
+            FrontRightKneeJoint_position_controller
+            RearLeftHipJoint_position_controller
+            RearLeftKneeJoint_position_controller
+            RearRightHipJoint_position_controller
+            RearRightKneeJoint_position_controller"/>
+
+
+  <!-- convert joint states to TF transforms for rviz, etc -->
+  <node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher"
+  respawn="false" output="screen">
+    <remap from="/joint_states" to="/FlexRobotwSupporter_v3_2/joint_states"/>
+  </node>
+
+</launch>

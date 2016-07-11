@@ -16,6 +16,8 @@ SET(CMAKE_TARGET_LINKED_INFO_FILES
 
 # The include file search paths:
 SET(CMAKE_C_TARGET_INCLUDE_PATH
+  "/home/bilynbk/catkin_ws/devel/include"
+  "/home/bilynbk/catkin_ws/src/flexrobot_description_pkg/include"
   "/opt/ros/indigo/include"
   "/usr/include/eigen3"
   "/usr/include/OGRE"

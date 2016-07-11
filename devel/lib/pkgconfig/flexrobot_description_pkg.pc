@@ -3,6 +3,6 @@ prefix=/home/bilynbk/catkin_ws/devel
 Name: flexrobot_description_pkg
 Description: Description of flexrobot_description_pkg
 Version: 0.0.0
-Cflags: 
-Libs: -L/home/bilynbk/catkin_ws/devel/lib 
-Requires: 
+Cflags: -I/home/bilynbk/catkin_ws/devel/include -I/home/bilynbk/catkin_ws/src/flexrobot_description_pkg/include
+Libs: -L/home/bilynbk/catkin_ws/devel/lib -lflexrobot_description_pkg
+Requires: geometry_msgs roscpp rospy rviz tf urdf xacro std_msgs actionlib actionlib_msgs message_runtime

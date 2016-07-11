@@ -117,6 +117,11 @@ ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unsp
 IF(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
   INCLUDE("/home/bilynbk/catkin_ws/build/gtest/cmake_install.cmake")
+  INCLUDE("/home/bilynbk/catkin_ws/build/gazebo_ros_demos/rrbot_control/cmake_install.cmake")
+  INCLUDE("/home/bilynbk/catkin_ws/build/gazebo_ros_demos/rrbot_description/cmake_install.cmake")
+  INCLUDE("/home/bilynbk/catkin_ws/build/gazebo_ros_demos/rrbot_gazebo/cmake_install.cmake")
+  INCLUDE("/home/bilynbk/catkin_ws/build/learning_test/cmake_install.cmake")
+  INCLUDE("/home/bilynbk/catkin_ws/build/gazebo_ros_demos/custom_plugin_tutorial/cmake_install.cmake")
   INCLUDE("/home/bilynbk/catkin_ws/build/agitr/cmake_install.cmake")
   INCLUDE("/home/bilynbk/catkin_ws/build/flexrobot_description_pkg/cmake_install.cmake")
 

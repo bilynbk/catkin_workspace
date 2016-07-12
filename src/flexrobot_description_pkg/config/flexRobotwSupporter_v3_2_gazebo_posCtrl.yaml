@@ -1,0 +1,73 @@
+FlexRobotwSupporter_v3_2:
+  # Publish all joint states -----------------------------------
+  joint_state_controller:
+    type: joint_state_controller/JointStateController
+    publish_rate: 50  
+  
+  # Position Controllers ---------------------------------------
+  # FrontLeftHipJoint_position_controller:
+  #   type: effort_controllers/JointPositionController
+  #   joint: FrontLeftHipJoint
+  #   pid: {p: 100.0, i: 0.01, d: 10.0}
+  # FrontLeftKneeJoint_position_controller:
+  #   type: effort_controllers/JointPositionController
+  #   joint: FrontLeftKneeJoint
+  #   pid: {p: 100.0, i: 0.01, d: 10.0}
+  # FrontRightHipJoint_position_controller:
+  #   type: effort_controllers/JointPositionController
+  #   joint: FrontRightHipJoint
+  #   pid: {p: 100.0, i: 0.01, d: 10.0}
+  # FrontRightKneeJoint_position_controller:
+  #   type: effort_controllers/JointPositionController
+  #   joint: FrontRightKneeJoint
+  #   pid: {p: 100.0, i: 0.01, d: 10.0}
+  # RearLeftHipJoint_position_controller:
+  #   type: effort_controllers/JointPositionController
+  #   joint: RearLeftHipJoint
+  #   pid: {p: 100.0, i: 0.01, d: 10.0}
+  # RearLeftKneeJoint_position_controller:
+  #   type: effort_controllers/JointPositionController
+  #   joint: RearLeftKneeJoint
+  #   pid: {p: 100.0, i: 0.01, d: 10.0}
+  # RearRightHipJoint_position_controller:
+  #   type: effort_controllers/JointPositionController
+  #   joint: RearRightHipJoint
+  #   pid: {p: 100.0, i: 0.01, d: 10.0}
+  # RearRightKneeJoint_position_controller:
+  #   type: effort_controllers/JointPositionController
+  #   joint: RearRightKneeJoint
+  #   pid: {p: 100.0, i: 0.01, d: 10.0}
+
+ 
+  FrontLeftHipJoint_position_controller:
+    type: position_controllers/JointPositionController
+    joint: FrontLeftHipJoint
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+  FrontLeftKneeJoint_position_controller:
+    type: position_controllers/JointPositionController
+    joint: FrontLeftKneeJoint
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+  FrontRightHipJoint_position_controller:
+    type: position_controllers/JointPositionController
+    joint: FrontRightHipJoint
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+  FrontRightKneeJoint_position_controller:
+    type: position_controllers/JointPositionController
+    joint: FrontRightKneeJoint
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+  RearLeftHipJoint_position_controller:
+    type: position_controllers/JointPositionController
+    joint: RearLeftHipJoint
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+  RearLeftKneeJoint_position_controller:
+    type: position_controllers/JointPositionController
+    joint: RearLeftKneeJoint
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+  RearRightHipJoint_position_controller:
+    type: position_controllers/JointPositionController
+    joint: RearRightHipJoint
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+  RearRightKneeJoint_position_controller:
+    type: position_controllers/JointPositionController
+    joint: RearRightKneeJoint
+    pid: {p: 100.0, i: 0.01, d: 10.0}

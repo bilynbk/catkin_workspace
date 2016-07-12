@@ -17,10 +17,13 @@ SET(CMAKE_TARGET_DEFINITIONS
 
 # Targets to which this target links.
 SET(CMAKE_TARGET_LINKED_INFO_FILES
+  "/home/bilynbk/catkin_ws/build/gazebo_ros/CMakeFiles/gazebo_ros_api_plugin.dir/DependInfo.cmake"
+  "/home/bilynbk/catkin_ws/build/gazebo_ros/CMakeFiles/gazebo_ros_paths_plugin.dir/DependInfo.cmake"
   )
 
 # The include file search paths:
 SET(CMAKE_C_TARGET_INCLUDE_PATH
+  "/home/bilynbk/catkin_ws/devel/include"
   "/opt/ros/indigo/include"
   "/usr/include/gazebo-7"
   "/usr/include/sdformat-4.1"

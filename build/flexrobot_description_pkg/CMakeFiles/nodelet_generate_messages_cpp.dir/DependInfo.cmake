@@ -18,6 +18,7 @@ SET(CMAKE_TARGET_LINKED_INFO_FILES
 SET(CMAKE_C_TARGET_INCLUDE_PATH
   "/home/bilynbk/catkin_ws/devel/include"
   "/home/bilynbk/catkin_ws/src/flexrobot_description_pkg/include"
+  "/home/bilynbk/catkin_ws/src/gazebo_ros_control/include"
   "/opt/ros/indigo/include"
   "/usr/include/eigen3"
   "/usr/include/OGRE"

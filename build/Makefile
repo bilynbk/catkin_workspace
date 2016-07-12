@@ -250,7 +250,7 @@ _catkin_empty_exported_target: cmake_check_build_system
 
 # fast build rule for target.
 _catkin_empty_exported_target/fast:
-	$(MAKE) -f gazebo_ros_demos/rrbot_control/CMakeFiles/_catkin_empty_exported_target.dir/build.make gazebo_ros_demos/rrbot_control/CMakeFiles/_catkin_empty_exported_target.dir/build
+	$(MAKE) -f rrbot_control/CMakeFiles/_catkin_empty_exported_target.dir/build.make rrbot_control/CMakeFiles/_catkin_empty_exported_target.dir/build
 .PHONY : _catkin_empty_exported_target/fast
 
 #=============================================================================
@@ -653,7 +653,7 @@ dynamic_reconfigure_gencfg: cmake_check_build_system
 
 # fast build rule for target.
 dynamic_reconfigure_gencfg/fast:
-	$(MAKE) -f gazebo_ros_demos/custom_plugin_tutorial/CMakeFiles/dynamic_reconfigure_gencfg.dir/build.make gazebo_ros_demos/custom_plugin_tutorial/CMakeFiles/dynamic_reconfigure_gencfg.dir/build
+	$(MAKE) -f gazebo_ros/CMakeFiles/dynamic_reconfigure_gencfg.dir/build.make gazebo_ros/CMakeFiles/dynamic_reconfigure_gencfg.dir/build
 .PHONY : dynamic_reconfigure_gencfg/fast
 
 #=============================================================================
@@ -666,7 +666,7 @@ dynamic_reconfigure_generate_messages_cpp: cmake_check_build_system
 
 # fast build rule for target.
 dynamic_reconfigure_generate_messages_cpp/fast:
-	$(MAKE) -f gazebo_ros_demos/custom_plugin_tutorial/CMakeFiles/dynamic_reconfigure_generate_messages_cpp.dir/build.make gazebo_ros_demos/custom_plugin_tutorial/CMakeFiles/dynamic_reconfigure_generate_messages_cpp.dir/build
+	$(MAKE) -f gazebo_ros/CMakeFiles/dynamic_reconfigure_generate_messages_cpp.dir/build.make gazebo_ros/CMakeFiles/dynamic_reconfigure_generate_messages_cpp.dir/build
 .PHONY : dynamic_reconfigure_generate_messages_cpp/fast
 
 #=============================================================================
@@ -679,7 +679,7 @@ dynamic_reconfigure_generate_messages_lisp: cmake_check_build_system
 
 # fast build rule for target.
 dynamic_reconfigure_generate_messages_lisp/fast:
-	$(MAKE) -f gazebo_ros_demos/custom_plugin_tutorial/CMakeFiles/dynamic_reconfigure_generate_messages_lisp.dir/build.make gazebo_ros_demos/custom_plugin_tutorial/CMakeFiles/dynamic_reconfigure_generate_messages_lisp.dir/build
+	$(MAKE) -f gazebo_ros/CMakeFiles/dynamic_reconfigure_generate_messages_lisp.dir/build.make gazebo_ros/CMakeFiles/dynamic_reconfigure_generate_messages_lisp.dir/build
 .PHONY : dynamic_reconfigure_generate_messages_lisp/fast
 
 #=============================================================================
@@ -692,7 +692,7 @@ dynamic_reconfigure_generate_messages_py: cmake_check_build_system
 
 # fast build rule for target.
 dynamic_reconfigure_generate_messages_py/fast:
-	$(MAKE) -f gazebo_ros_demos/custom_plugin_tutorial/CMakeFiles/dynamic_reconfigure_generate_messages_py.dir/build.make gazebo_ros_demos/custom_plugin_tutorial/CMakeFiles/dynamic_reconfigure_generate_messages_py.dir/build
+	$(MAKE) -f gazebo_ros/CMakeFiles/dynamic_reconfigure_generate_messages_py.dir/build.make gazebo_ros/CMakeFiles/dynamic_reconfigure_generate_messages_py.dir/build
 .PHONY : dynamic_reconfigure_generate_messages_py/fast
 
 #=============================================================================
@@ -705,7 +705,7 @@ gazebo_msgs_generate_messages_cpp: cmake_check_build_system
 
 # fast build rule for target.
 gazebo_msgs_generate_messages_cpp/fast:
-	$(MAKE) -f gazebo_ros_demos/custom_plugin_tutorial/CMakeFiles/gazebo_msgs_generate_messages_cpp.dir/build.make gazebo_ros_demos/custom_plugin_tutorial/CMakeFiles/gazebo_msgs_generate_messages_cpp.dir/build
+	$(MAKE) -f gazebo_ros/CMakeFiles/gazebo_msgs_generate_messages_cpp.dir/build.make gazebo_ros/CMakeFiles/gazebo_msgs_generate_messages_cpp.dir/build
 .PHONY : gazebo_msgs_generate_messages_cpp/fast
 
 #=============================================================================
@@ -718,7 +718,7 @@ gazebo_msgs_generate_messages_lisp: cmake_check_build_system
 
 # fast build rule for target.
 gazebo_msgs_generate_messages_lisp/fast:
-	$(MAKE) -f gazebo_ros_demos/custom_plugin_tutorial/CMakeFiles/gazebo_msgs_generate_messages_lisp.dir/build.make gazebo_ros_demos/custom_plugin_tutorial/CMakeFiles/gazebo_msgs_generate_messages_lisp.dir/build
+	$(MAKE) -f gazebo_ros/CMakeFiles/gazebo_msgs_generate_messages_lisp.dir/build.make gazebo_ros/CMakeFiles/gazebo_msgs_generate_messages_lisp.dir/build
 .PHONY : gazebo_msgs_generate_messages_lisp/fast
 
 #=============================================================================
@@ -731,8 +731,21 @@ gazebo_msgs_generate_messages_py: cmake_check_build_system
 
 # fast build rule for target.
 gazebo_msgs_generate_messages_py/fast:
-	$(MAKE) -f gazebo_ros_demos/custom_plugin_tutorial/CMakeFiles/gazebo_msgs_generate_messages_py.dir/build.make gazebo_ros_demos/custom_plugin_tutorial/CMakeFiles/gazebo_msgs_generate_messages_py.dir/build
+	$(MAKE) -f gazebo_ros/CMakeFiles/gazebo_msgs_generate_messages_py.dir/build.make gazebo_ros/CMakeFiles/gazebo_msgs_generate_messages_py.dir/build
 .PHONY : gazebo_msgs_generate_messages_py/fast
+
+#=============================================================================
+# Target rules for targets named gazebo_ros_api_plugin
+
+# Build rule for target.
+gazebo_ros_api_plugin: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 gazebo_ros_api_plugin
+.PHONY : gazebo_ros_api_plugin
+
+# fast build rule for target.
+gazebo_ros_api_plugin/fast:
+	$(MAKE) -f gazebo_ros/CMakeFiles/gazebo_ros_api_plugin.dir/build.make gazebo_ros/CMakeFiles/gazebo_ros_api_plugin.dir/build
+.PHONY : gazebo_ros_api_plugin/fast
 
 #=============================================================================
 # Target rules for targets named gazebo_ros_gencfg
@@ -744,8 +757,255 @@ gazebo_ros_gencfg: cmake_check_build_system
 
 # fast build rule for target.
 gazebo_ros_gencfg/fast:
-	$(MAKE) -f gazebo_ros_demos/custom_plugin_tutorial/CMakeFiles/gazebo_ros_gencfg.dir/build.make gazebo_ros_demos/custom_plugin_tutorial/CMakeFiles/gazebo_ros_gencfg.dir/build
+	$(MAKE) -f gazebo_ros/CMakeFiles/gazebo_ros_gencfg.dir/build.make gazebo_ros/CMakeFiles/gazebo_ros_gencfg.dir/build
 .PHONY : gazebo_ros_gencfg/fast
+
+#=============================================================================
+# Target rules for targets named gazebo_ros_paths_plugin
+
+# Build rule for target.
+gazebo_ros_paths_plugin: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 gazebo_ros_paths_plugin
+.PHONY : gazebo_ros_paths_plugin
+
+# fast build rule for target.
+gazebo_ros_paths_plugin/fast:
+	$(MAKE) -f gazebo_ros/CMakeFiles/gazebo_ros_paths_plugin.dir/build.make gazebo_ros/CMakeFiles/gazebo_ros_paths_plugin.dir/build
+.PHONY : gazebo_ros_paths_plugin/fast
+
+#=============================================================================
+# Target rules for targets named geometry_msgs_generate_messages_cpp
+
+# Build rule for target.
+geometry_msgs_generate_messages_cpp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 geometry_msgs_generate_messages_cpp
+.PHONY : geometry_msgs_generate_messages_cpp
+
+# fast build rule for target.
+geometry_msgs_generate_messages_cpp/fast:
+	$(MAKE) -f gazebo_ros/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/build.make gazebo_ros/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/build
+.PHONY : geometry_msgs_generate_messages_cpp/fast
+
+#=============================================================================
+# Target rules for targets named geometry_msgs_generate_messages_lisp
+
+# Build rule for target.
+geometry_msgs_generate_messages_lisp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 geometry_msgs_generate_messages_lisp
+.PHONY : geometry_msgs_generate_messages_lisp
+
+# fast build rule for target.
+geometry_msgs_generate_messages_lisp/fast:
+	$(MAKE) -f gazebo_ros/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/build.make gazebo_ros/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/build
+.PHONY : geometry_msgs_generate_messages_lisp/fast
+
+#=============================================================================
+# Target rules for targets named geometry_msgs_generate_messages_py
+
+# Build rule for target.
+geometry_msgs_generate_messages_py: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 geometry_msgs_generate_messages_py
+.PHONY : geometry_msgs_generate_messages_py
+
+# fast build rule for target.
+geometry_msgs_generate_messages_py/fast:
+	$(MAKE) -f gazebo_ros/CMakeFiles/geometry_msgs_generate_messages_py.dir/build.make gazebo_ros/CMakeFiles/geometry_msgs_generate_messages_py.dir/build
+.PHONY : geometry_msgs_generate_messages_py/fast
+
+#=============================================================================
+# Target rules for targets named sensor_msgs_generate_messages_cpp
+
+# Build rule for target.
+sensor_msgs_generate_messages_cpp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 sensor_msgs_generate_messages_cpp
+.PHONY : sensor_msgs_generate_messages_cpp
+
+# fast build rule for target.
+sensor_msgs_generate_messages_cpp/fast:
+	$(MAKE) -f gazebo_ros/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/build.make gazebo_ros/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/build
+.PHONY : sensor_msgs_generate_messages_cpp/fast
+
+#=============================================================================
+# Target rules for targets named sensor_msgs_generate_messages_lisp
+
+# Build rule for target.
+sensor_msgs_generate_messages_lisp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 sensor_msgs_generate_messages_lisp
+.PHONY : sensor_msgs_generate_messages_lisp
+
+# fast build rule for target.
+sensor_msgs_generate_messages_lisp/fast:
+	$(MAKE) -f gazebo_ros/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/build.make gazebo_ros/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/build
+.PHONY : sensor_msgs_generate_messages_lisp/fast
+
+#=============================================================================
+# Target rules for targets named sensor_msgs_generate_messages_py
+
+# Build rule for target.
+sensor_msgs_generate_messages_py: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 sensor_msgs_generate_messages_py
+.PHONY : sensor_msgs_generate_messages_py
+
+# fast build rule for target.
+sensor_msgs_generate_messages_py/fast:
+	$(MAKE) -f gazebo_ros/CMakeFiles/sensor_msgs_generate_messages_py.dir/build.make gazebo_ros/CMakeFiles/sensor_msgs_generate_messages_py.dir/build
+.PHONY : sensor_msgs_generate_messages_py/fast
+
+#=============================================================================
+# Target rules for targets named std_srvs_generate_messages_cpp
+
+# Build rule for target.
+std_srvs_generate_messages_cpp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 std_srvs_generate_messages_cpp
+.PHONY : std_srvs_generate_messages_cpp
+
+# fast build rule for target.
+std_srvs_generate_messages_cpp/fast:
+	$(MAKE) -f gazebo_ros/CMakeFiles/std_srvs_generate_messages_cpp.dir/build.make gazebo_ros/CMakeFiles/std_srvs_generate_messages_cpp.dir/build
+.PHONY : std_srvs_generate_messages_cpp/fast
+
+#=============================================================================
+# Target rules for targets named std_srvs_generate_messages_lisp
+
+# Build rule for target.
+std_srvs_generate_messages_lisp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 std_srvs_generate_messages_lisp
+.PHONY : std_srvs_generate_messages_lisp
+
+# fast build rule for target.
+std_srvs_generate_messages_lisp/fast:
+	$(MAKE) -f gazebo_ros/CMakeFiles/std_srvs_generate_messages_lisp.dir/build.make gazebo_ros/CMakeFiles/std_srvs_generate_messages_lisp.dir/build
+.PHONY : std_srvs_generate_messages_lisp/fast
+
+#=============================================================================
+# Target rules for targets named std_srvs_generate_messages_py
+
+# Build rule for target.
+std_srvs_generate_messages_py: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 std_srvs_generate_messages_py
+.PHONY : std_srvs_generate_messages_py
+
+# fast build rule for target.
+std_srvs_generate_messages_py/fast:
+	$(MAKE) -f gazebo_ros/CMakeFiles/std_srvs_generate_messages_py.dir/build.make gazebo_ros/CMakeFiles/std_srvs_generate_messages_py.dir/build
+.PHONY : std_srvs_generate_messages_py/fast
+
+#=============================================================================
+# Target rules for targets named tf2_msgs_generate_messages_cpp
+
+# Build rule for target.
+tf2_msgs_generate_messages_cpp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 tf2_msgs_generate_messages_cpp
+.PHONY : tf2_msgs_generate_messages_cpp
+
+# fast build rule for target.
+tf2_msgs_generate_messages_cpp/fast:
+	$(MAKE) -f gazebo_ros/CMakeFiles/tf2_msgs_generate_messages_cpp.dir/build.make gazebo_ros/CMakeFiles/tf2_msgs_generate_messages_cpp.dir/build
+.PHONY : tf2_msgs_generate_messages_cpp/fast
+
+#=============================================================================
+# Target rules for targets named tf2_msgs_generate_messages_lisp
+
+# Build rule for target.
+tf2_msgs_generate_messages_lisp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 tf2_msgs_generate_messages_lisp
+.PHONY : tf2_msgs_generate_messages_lisp
+
+# fast build rule for target.
+tf2_msgs_generate_messages_lisp/fast:
+	$(MAKE) -f gazebo_ros/CMakeFiles/tf2_msgs_generate_messages_lisp.dir/build.make gazebo_ros/CMakeFiles/tf2_msgs_generate_messages_lisp.dir/build
+.PHONY : tf2_msgs_generate_messages_lisp/fast
+
+#=============================================================================
+# Target rules for targets named tf2_msgs_generate_messages_py
+
+# Build rule for target.
+tf2_msgs_generate_messages_py: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 tf2_msgs_generate_messages_py
+.PHONY : tf2_msgs_generate_messages_py
+
+# fast build rule for target.
+tf2_msgs_generate_messages_py/fast:
+	$(MAKE) -f gazebo_ros/CMakeFiles/tf2_msgs_generate_messages_py.dir/build.make gazebo_ros/CMakeFiles/tf2_msgs_generate_messages_py.dir/build
+.PHONY : tf2_msgs_generate_messages_py/fast
+
+#=============================================================================
+# Target rules for targets named tf_generate_messages_cpp
+
+# Build rule for target.
+tf_generate_messages_cpp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 tf_generate_messages_cpp
+.PHONY : tf_generate_messages_cpp
+
+# fast build rule for target.
+tf_generate_messages_cpp/fast:
+	$(MAKE) -f gazebo_ros/CMakeFiles/tf_generate_messages_cpp.dir/build.make gazebo_ros/CMakeFiles/tf_generate_messages_cpp.dir/build
+.PHONY : tf_generate_messages_cpp/fast
+
+#=============================================================================
+# Target rules for targets named tf_generate_messages_lisp
+
+# Build rule for target.
+tf_generate_messages_lisp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 tf_generate_messages_lisp
+.PHONY : tf_generate_messages_lisp
+
+# fast build rule for target.
+tf_generate_messages_lisp/fast:
+	$(MAKE) -f gazebo_ros/CMakeFiles/tf_generate_messages_lisp.dir/build.make gazebo_ros/CMakeFiles/tf_generate_messages_lisp.dir/build
+.PHONY : tf_generate_messages_lisp/fast
+
+#=============================================================================
+# Target rules for targets named tf_generate_messages_py
+
+# Build rule for target.
+tf_generate_messages_py: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 tf_generate_messages_py
+.PHONY : tf_generate_messages_py
+
+# fast build rule for target.
+tf_generate_messages_py/fast:
+	$(MAKE) -f gazebo_ros/CMakeFiles/tf_generate_messages_py.dir/build.make gazebo_ros/CMakeFiles/tf_generate_messages_py.dir/build
+.PHONY : tf_generate_messages_py/fast
+
+#=============================================================================
+# Target rules for targets named trajectory_msgs_generate_messages_cpp
+
+# Build rule for target.
+trajectory_msgs_generate_messages_cpp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 trajectory_msgs_generate_messages_cpp
+.PHONY : trajectory_msgs_generate_messages_cpp
+
+# fast build rule for target.
+trajectory_msgs_generate_messages_cpp/fast:
+	$(MAKE) -f gazebo_ros/CMakeFiles/trajectory_msgs_generate_messages_cpp.dir/build.make gazebo_ros/CMakeFiles/trajectory_msgs_generate_messages_cpp.dir/build
+.PHONY : trajectory_msgs_generate_messages_cpp/fast
+
+#=============================================================================
+# Target rules for targets named trajectory_msgs_generate_messages_lisp
+
+# Build rule for target.
+trajectory_msgs_generate_messages_lisp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 trajectory_msgs_generate_messages_lisp
+.PHONY : trajectory_msgs_generate_messages_lisp
+
+# fast build rule for target.
+trajectory_msgs_generate_messages_lisp/fast:
+	$(MAKE) -f gazebo_ros/CMakeFiles/trajectory_msgs_generate_messages_lisp.dir/build.make gazebo_ros/CMakeFiles/trajectory_msgs_generate_messages_lisp.dir/build
+.PHONY : trajectory_msgs_generate_messages_lisp/fast
+
+#=============================================================================
+# Target rules for targets named trajectory_msgs_generate_messages_py
+
+# Build rule for target.
+trajectory_msgs_generate_messages_py: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 trajectory_msgs_generate_messages_py
+.PHONY : trajectory_msgs_generate_messages_py
+
+# fast build rule for target.
+trajectory_msgs_generate_messages_py/fast:
+	$(MAKE) -f gazebo_ros/CMakeFiles/trajectory_msgs_generate_messages_py.dir/build.make gazebo_ros/CMakeFiles/trajectory_msgs_generate_messages_py.dir/build
+.PHONY : trajectory_msgs_generate_messages_py/fast
 
 #=============================================================================
 # Target rules for targets named gazebo_tutorials
@@ -759,240 +1019,6 @@ gazebo_tutorials: cmake_check_build_system
 gazebo_tutorials/fast:
 	$(MAKE) -f gazebo_ros_demos/custom_plugin_tutorial/CMakeFiles/gazebo_tutorials.dir/build.make gazebo_ros_demos/custom_plugin_tutorial/CMakeFiles/gazebo_tutorials.dir/build
 .PHONY : gazebo_tutorials/fast
-
-#=============================================================================
-# Target rules for targets named geometry_msgs_generate_messages_cpp
-
-# Build rule for target.
-geometry_msgs_generate_messages_cpp: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 geometry_msgs_generate_messages_cpp
-.PHONY : geometry_msgs_generate_messages_cpp
-
-# fast build rule for target.
-geometry_msgs_generate_messages_cpp/fast:
-	$(MAKE) -f gazebo_ros_demos/custom_plugin_tutorial/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/build.make gazebo_ros_demos/custom_plugin_tutorial/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/build
-.PHONY : geometry_msgs_generate_messages_cpp/fast
-
-#=============================================================================
-# Target rules for targets named geometry_msgs_generate_messages_lisp
-
-# Build rule for target.
-geometry_msgs_generate_messages_lisp: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 geometry_msgs_generate_messages_lisp
-.PHONY : geometry_msgs_generate_messages_lisp
-
-# fast build rule for target.
-geometry_msgs_generate_messages_lisp/fast:
-	$(MAKE) -f gazebo_ros_demos/custom_plugin_tutorial/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/build.make gazebo_ros_demos/custom_plugin_tutorial/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/build
-.PHONY : geometry_msgs_generate_messages_lisp/fast
-
-#=============================================================================
-# Target rules for targets named geometry_msgs_generate_messages_py
-
-# Build rule for target.
-geometry_msgs_generate_messages_py: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 geometry_msgs_generate_messages_py
-.PHONY : geometry_msgs_generate_messages_py
-
-# fast build rule for target.
-geometry_msgs_generate_messages_py/fast:
-	$(MAKE) -f gazebo_ros_demos/custom_plugin_tutorial/CMakeFiles/geometry_msgs_generate_messages_py.dir/build.make gazebo_ros_demos/custom_plugin_tutorial/CMakeFiles/geometry_msgs_generate_messages_py.dir/build
-.PHONY : geometry_msgs_generate_messages_py/fast
-
-#=============================================================================
-# Target rules for targets named sensor_msgs_generate_messages_cpp
-
-# Build rule for target.
-sensor_msgs_generate_messages_cpp: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 sensor_msgs_generate_messages_cpp
-.PHONY : sensor_msgs_generate_messages_cpp
-
-# fast build rule for target.
-sensor_msgs_generate_messages_cpp/fast:
-	$(MAKE) -f gazebo_ros_demos/custom_plugin_tutorial/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/build.make gazebo_ros_demos/custom_plugin_tutorial/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/build
-.PHONY : sensor_msgs_generate_messages_cpp/fast
-
-#=============================================================================
-# Target rules for targets named sensor_msgs_generate_messages_lisp
-
-# Build rule for target.
-sensor_msgs_generate_messages_lisp: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 sensor_msgs_generate_messages_lisp
-.PHONY : sensor_msgs_generate_messages_lisp
-
-# fast build rule for target.
-sensor_msgs_generate_messages_lisp/fast:
-	$(MAKE) -f gazebo_ros_demos/custom_plugin_tutorial/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/build.make gazebo_ros_demos/custom_plugin_tutorial/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/build
-.PHONY : sensor_msgs_generate_messages_lisp/fast
-
-#=============================================================================
-# Target rules for targets named sensor_msgs_generate_messages_py
-
-# Build rule for target.
-sensor_msgs_generate_messages_py: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 sensor_msgs_generate_messages_py
-.PHONY : sensor_msgs_generate_messages_py
-
-# fast build rule for target.
-sensor_msgs_generate_messages_py/fast:
-	$(MAKE) -f gazebo_ros_demos/custom_plugin_tutorial/CMakeFiles/sensor_msgs_generate_messages_py.dir/build.make gazebo_ros_demos/custom_plugin_tutorial/CMakeFiles/sensor_msgs_generate_messages_py.dir/build
-.PHONY : sensor_msgs_generate_messages_py/fast
-
-#=============================================================================
-# Target rules for targets named std_srvs_generate_messages_cpp
-
-# Build rule for target.
-std_srvs_generate_messages_cpp: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 std_srvs_generate_messages_cpp
-.PHONY : std_srvs_generate_messages_cpp
-
-# fast build rule for target.
-std_srvs_generate_messages_cpp/fast:
-	$(MAKE) -f gazebo_ros_demos/custom_plugin_tutorial/CMakeFiles/std_srvs_generate_messages_cpp.dir/build.make gazebo_ros_demos/custom_plugin_tutorial/CMakeFiles/std_srvs_generate_messages_cpp.dir/build
-.PHONY : std_srvs_generate_messages_cpp/fast
-
-#=============================================================================
-# Target rules for targets named std_srvs_generate_messages_lisp
-
-# Build rule for target.
-std_srvs_generate_messages_lisp: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 std_srvs_generate_messages_lisp
-.PHONY : std_srvs_generate_messages_lisp
-
-# fast build rule for target.
-std_srvs_generate_messages_lisp/fast:
-	$(MAKE) -f gazebo_ros_demos/custom_plugin_tutorial/CMakeFiles/std_srvs_generate_messages_lisp.dir/build.make gazebo_ros_demos/custom_plugin_tutorial/CMakeFiles/std_srvs_generate_messages_lisp.dir/build
-.PHONY : std_srvs_generate_messages_lisp/fast
-
-#=============================================================================
-# Target rules for targets named std_srvs_generate_messages_py
-
-# Build rule for target.
-std_srvs_generate_messages_py: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 std_srvs_generate_messages_py
-.PHONY : std_srvs_generate_messages_py
-
-# fast build rule for target.
-std_srvs_generate_messages_py/fast:
-	$(MAKE) -f gazebo_ros_demos/custom_plugin_tutorial/CMakeFiles/std_srvs_generate_messages_py.dir/build.make gazebo_ros_demos/custom_plugin_tutorial/CMakeFiles/std_srvs_generate_messages_py.dir/build
-.PHONY : std_srvs_generate_messages_py/fast
-
-#=============================================================================
-# Target rules for targets named tf2_msgs_generate_messages_cpp
-
-# Build rule for target.
-tf2_msgs_generate_messages_cpp: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 tf2_msgs_generate_messages_cpp
-.PHONY : tf2_msgs_generate_messages_cpp
-
-# fast build rule for target.
-tf2_msgs_generate_messages_cpp/fast:
-	$(MAKE) -f gazebo_ros_demos/custom_plugin_tutorial/CMakeFiles/tf2_msgs_generate_messages_cpp.dir/build.make gazebo_ros_demos/custom_plugin_tutorial/CMakeFiles/tf2_msgs_generate_messages_cpp.dir/build
-.PHONY : tf2_msgs_generate_messages_cpp/fast
-
-#=============================================================================
-# Target rules for targets named tf2_msgs_generate_messages_lisp
-
-# Build rule for target.
-tf2_msgs_generate_messages_lisp: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 tf2_msgs_generate_messages_lisp
-.PHONY : tf2_msgs_generate_messages_lisp
-
-# fast build rule for target.
-tf2_msgs_generate_messages_lisp/fast:
-	$(MAKE) -f gazebo_ros_demos/custom_plugin_tutorial/CMakeFiles/tf2_msgs_generate_messages_lisp.dir/build.make gazebo_ros_demos/custom_plugin_tutorial/CMakeFiles/tf2_msgs_generate_messages_lisp.dir/build
-.PHONY : tf2_msgs_generate_messages_lisp/fast
-
-#=============================================================================
-# Target rules for targets named tf2_msgs_generate_messages_py
-
-# Build rule for target.
-tf2_msgs_generate_messages_py: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 tf2_msgs_generate_messages_py
-.PHONY : tf2_msgs_generate_messages_py
-
-# fast build rule for target.
-tf2_msgs_generate_messages_py/fast:
-	$(MAKE) -f gazebo_ros_demos/custom_plugin_tutorial/CMakeFiles/tf2_msgs_generate_messages_py.dir/build.make gazebo_ros_demos/custom_plugin_tutorial/CMakeFiles/tf2_msgs_generate_messages_py.dir/build
-.PHONY : tf2_msgs_generate_messages_py/fast
-
-#=============================================================================
-# Target rules for targets named tf_generate_messages_cpp
-
-# Build rule for target.
-tf_generate_messages_cpp: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 tf_generate_messages_cpp
-.PHONY : tf_generate_messages_cpp
-
-# fast build rule for target.
-tf_generate_messages_cpp/fast:
-	$(MAKE) -f gazebo_ros_demos/custom_plugin_tutorial/CMakeFiles/tf_generate_messages_cpp.dir/build.make gazebo_ros_demos/custom_plugin_tutorial/CMakeFiles/tf_generate_messages_cpp.dir/build
-.PHONY : tf_generate_messages_cpp/fast
-
-#=============================================================================
-# Target rules for targets named tf_generate_messages_lisp
-
-# Build rule for target.
-tf_generate_messages_lisp: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 tf_generate_messages_lisp
-.PHONY : tf_generate_messages_lisp
-
-# fast build rule for target.
-tf_generate_messages_lisp/fast:
-	$(MAKE) -f gazebo_ros_demos/custom_plugin_tutorial/CMakeFiles/tf_generate_messages_lisp.dir/build.make gazebo_ros_demos/custom_plugin_tutorial/CMakeFiles/tf_generate_messages_lisp.dir/build
-.PHONY : tf_generate_messages_lisp/fast
-
-#=============================================================================
-# Target rules for targets named tf_generate_messages_py
-
-# Build rule for target.
-tf_generate_messages_py: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 tf_generate_messages_py
-.PHONY : tf_generate_messages_py
-
-# fast build rule for target.
-tf_generate_messages_py/fast:
-	$(MAKE) -f gazebo_ros_demos/custom_plugin_tutorial/CMakeFiles/tf_generate_messages_py.dir/build.make gazebo_ros_demos/custom_plugin_tutorial/CMakeFiles/tf_generate_messages_py.dir/build
-.PHONY : tf_generate_messages_py/fast
-
-#=============================================================================
-# Target rules for targets named trajectory_msgs_generate_messages_cpp
-
-# Build rule for target.
-trajectory_msgs_generate_messages_cpp: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 trajectory_msgs_generate_messages_cpp
-.PHONY : trajectory_msgs_generate_messages_cpp
-
-# fast build rule for target.
-trajectory_msgs_generate_messages_cpp/fast:
-	$(MAKE) -f gazebo_ros_demos/custom_plugin_tutorial/CMakeFiles/trajectory_msgs_generate_messages_cpp.dir/build.make gazebo_ros_demos/custom_plugin_tutorial/CMakeFiles/trajectory_msgs_generate_messages_cpp.dir/build
-.PHONY : trajectory_msgs_generate_messages_cpp/fast
-
-#=============================================================================
-# Target rules for targets named trajectory_msgs_generate_messages_lisp
-
-# Build rule for target.
-trajectory_msgs_generate_messages_lisp: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 trajectory_msgs_generate_messages_lisp
-.PHONY : trajectory_msgs_generate_messages_lisp
-
-# fast build rule for target.
-trajectory_msgs_generate_messages_lisp/fast:
-	$(MAKE) -f gazebo_ros_demos/custom_plugin_tutorial/CMakeFiles/trajectory_msgs_generate_messages_lisp.dir/build.make gazebo_ros_demos/custom_plugin_tutorial/CMakeFiles/trajectory_msgs_generate_messages_lisp.dir/build
-.PHONY : trajectory_msgs_generate_messages_lisp/fast
-
-#=============================================================================
-# Target rules for targets named trajectory_msgs_generate_messages_py
-
-# Build rule for target.
-trajectory_msgs_generate_messages_py: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 trajectory_msgs_generate_messages_py
-.PHONY : trajectory_msgs_generate_messages_py
-
-# fast build rule for target.
-trajectory_msgs_generate_messages_py/fast:
-	$(MAKE) -f gazebo_ros_demos/custom_plugin_tutorial/CMakeFiles/trajectory_msgs_generate_messages_py.dir/build.make gazebo_ros_demos/custom_plugin_tutorial/CMakeFiles/trajectory_msgs_generate_messages_py.dir/build
-.PHONY : trajectory_msgs_generate_messages_py/fast
 
 #=============================================================================
 # Target rules for targets named count
@@ -1110,6 +1136,123 @@ throttle: cmake_check_build_system
 throttle/fast:
 	$(MAKE) -f agitr/CMakeFiles/throttle.dir/build.make agitr/CMakeFiles/throttle.dir/build
 .PHONY : throttle/fast
+
+#=============================================================================
+# Target rules for targets named control_toolbox_gencfg
+
+# Build rule for target.
+control_toolbox_gencfg: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 control_toolbox_gencfg
+.PHONY : control_toolbox_gencfg
+
+# fast build rule for target.
+control_toolbox_gencfg/fast:
+	$(MAKE) -f gazebo_ros_control/CMakeFiles/control_toolbox_gencfg.dir/build.make gazebo_ros_control/CMakeFiles/control_toolbox_gencfg.dir/build
+.PHONY : control_toolbox_gencfg/fast
+
+#=============================================================================
+# Target rules for targets named control_toolbox_generate_messages_cpp
+
+# Build rule for target.
+control_toolbox_generate_messages_cpp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 control_toolbox_generate_messages_cpp
+.PHONY : control_toolbox_generate_messages_cpp
+
+# fast build rule for target.
+control_toolbox_generate_messages_cpp/fast:
+	$(MAKE) -f gazebo_ros_control/CMakeFiles/control_toolbox_generate_messages_cpp.dir/build.make gazebo_ros_control/CMakeFiles/control_toolbox_generate_messages_cpp.dir/build
+.PHONY : control_toolbox_generate_messages_cpp/fast
+
+#=============================================================================
+# Target rules for targets named control_toolbox_generate_messages_lisp
+
+# Build rule for target.
+control_toolbox_generate_messages_lisp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 control_toolbox_generate_messages_lisp
+.PHONY : control_toolbox_generate_messages_lisp
+
+# fast build rule for target.
+control_toolbox_generate_messages_lisp/fast:
+	$(MAKE) -f gazebo_ros_control/CMakeFiles/control_toolbox_generate_messages_lisp.dir/build.make gazebo_ros_control/CMakeFiles/control_toolbox_generate_messages_lisp.dir/build
+.PHONY : control_toolbox_generate_messages_lisp/fast
+
+#=============================================================================
+# Target rules for targets named control_toolbox_generate_messages_py
+
+# Build rule for target.
+control_toolbox_generate_messages_py: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 control_toolbox_generate_messages_py
+.PHONY : control_toolbox_generate_messages_py
+
+# fast build rule for target.
+control_toolbox_generate_messages_py/fast:
+	$(MAKE) -f gazebo_ros_control/CMakeFiles/control_toolbox_generate_messages_py.dir/build.make gazebo_ros_control/CMakeFiles/control_toolbox_generate_messages_py.dir/build
+.PHONY : control_toolbox_generate_messages_py/fast
+
+#=============================================================================
+# Target rules for targets named controller_manager_msgs_generate_messages_cpp
+
+# Build rule for target.
+controller_manager_msgs_generate_messages_cpp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 controller_manager_msgs_generate_messages_cpp
+.PHONY : controller_manager_msgs_generate_messages_cpp
+
+# fast build rule for target.
+controller_manager_msgs_generate_messages_cpp/fast:
+	$(MAKE) -f gazebo_ros_control/CMakeFiles/controller_manager_msgs_generate_messages_cpp.dir/build.make gazebo_ros_control/CMakeFiles/controller_manager_msgs_generate_messages_cpp.dir/build
+.PHONY : controller_manager_msgs_generate_messages_cpp/fast
+
+#=============================================================================
+# Target rules for targets named controller_manager_msgs_generate_messages_lisp
+
+# Build rule for target.
+controller_manager_msgs_generate_messages_lisp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 controller_manager_msgs_generate_messages_lisp
+.PHONY : controller_manager_msgs_generate_messages_lisp
+
+# fast build rule for target.
+controller_manager_msgs_generate_messages_lisp/fast:
+	$(MAKE) -f gazebo_ros_control/CMakeFiles/controller_manager_msgs_generate_messages_lisp.dir/build.make gazebo_ros_control/CMakeFiles/controller_manager_msgs_generate_messages_lisp.dir/build
+.PHONY : controller_manager_msgs_generate_messages_lisp/fast
+
+#=============================================================================
+# Target rules for targets named controller_manager_msgs_generate_messages_py
+
+# Build rule for target.
+controller_manager_msgs_generate_messages_py: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 controller_manager_msgs_generate_messages_py
+.PHONY : controller_manager_msgs_generate_messages_py
+
+# fast build rule for target.
+controller_manager_msgs_generate_messages_py/fast:
+	$(MAKE) -f gazebo_ros_control/CMakeFiles/controller_manager_msgs_generate_messages_py.dir/build.make gazebo_ros_control/CMakeFiles/controller_manager_msgs_generate_messages_py.dir/build
+.PHONY : controller_manager_msgs_generate_messages_py/fast
+
+#=============================================================================
+# Target rules for targets named default_robot_hw_sim
+
+# Build rule for target.
+default_robot_hw_sim: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 default_robot_hw_sim
+.PHONY : default_robot_hw_sim
+
+# fast build rule for target.
+default_robot_hw_sim/fast:
+	$(MAKE) -f gazebo_ros_control/CMakeFiles/default_robot_hw_sim.dir/build.make gazebo_ros_control/CMakeFiles/default_robot_hw_sim.dir/build
+.PHONY : default_robot_hw_sim/fast
+
+#=============================================================================
+# Target rules for targets named gazebo_ros_control
+
+# Build rule for target.
+gazebo_ros_control: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 gazebo_ros_control
+.PHONY : gazebo_ros_control
+
+# fast build rule for target.
+gazebo_ros_control/fast:
+	$(MAKE) -f gazebo_ros_control/CMakeFiles/gazebo_ros_control.dir/build.make gazebo_ros_control/CMakeFiles/gazebo_ros_control.dir/build
+.PHONY : gazebo_ros_control/fast
 
 #=============================================================================
 # Target rules for targets named _flexrobot_description_pkg_generate_messages_check_deps_Demo_actionAction
@@ -1266,97 +1409,6 @@ bond_generate_messages_py: cmake_check_build_system
 bond_generate_messages_py/fast:
 	$(MAKE) -f flexrobot_description_pkg/CMakeFiles/bond_generate_messages_py.dir/build.make flexrobot_description_pkg/CMakeFiles/bond_generate_messages_py.dir/build
 .PHONY : bond_generate_messages_py/fast
-
-#=============================================================================
-# Target rules for targets named control_toolbox_gencfg
-
-# Build rule for target.
-control_toolbox_gencfg: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 control_toolbox_gencfg
-.PHONY : control_toolbox_gencfg
-
-# fast build rule for target.
-control_toolbox_gencfg/fast:
-	$(MAKE) -f flexrobot_description_pkg/CMakeFiles/control_toolbox_gencfg.dir/build.make flexrobot_description_pkg/CMakeFiles/control_toolbox_gencfg.dir/build
-.PHONY : control_toolbox_gencfg/fast
-
-#=============================================================================
-# Target rules for targets named control_toolbox_generate_messages_cpp
-
-# Build rule for target.
-control_toolbox_generate_messages_cpp: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 control_toolbox_generate_messages_cpp
-.PHONY : control_toolbox_generate_messages_cpp
-
-# fast build rule for target.
-control_toolbox_generate_messages_cpp/fast:
-	$(MAKE) -f flexrobot_description_pkg/CMakeFiles/control_toolbox_generate_messages_cpp.dir/build.make flexrobot_description_pkg/CMakeFiles/control_toolbox_generate_messages_cpp.dir/build
-.PHONY : control_toolbox_generate_messages_cpp/fast
-
-#=============================================================================
-# Target rules for targets named control_toolbox_generate_messages_lisp
-
-# Build rule for target.
-control_toolbox_generate_messages_lisp: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 control_toolbox_generate_messages_lisp
-.PHONY : control_toolbox_generate_messages_lisp
-
-# fast build rule for target.
-control_toolbox_generate_messages_lisp/fast:
-	$(MAKE) -f flexrobot_description_pkg/CMakeFiles/control_toolbox_generate_messages_lisp.dir/build.make flexrobot_description_pkg/CMakeFiles/control_toolbox_generate_messages_lisp.dir/build
-.PHONY : control_toolbox_generate_messages_lisp/fast
-
-#=============================================================================
-# Target rules for targets named control_toolbox_generate_messages_py
-
-# Build rule for target.
-control_toolbox_generate_messages_py: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 control_toolbox_generate_messages_py
-.PHONY : control_toolbox_generate_messages_py
-
-# fast build rule for target.
-control_toolbox_generate_messages_py/fast:
-	$(MAKE) -f flexrobot_description_pkg/CMakeFiles/control_toolbox_generate_messages_py.dir/build.make flexrobot_description_pkg/CMakeFiles/control_toolbox_generate_messages_py.dir/build
-.PHONY : control_toolbox_generate_messages_py/fast
-
-#=============================================================================
-# Target rules for targets named controller_manager_msgs_generate_messages_cpp
-
-# Build rule for target.
-controller_manager_msgs_generate_messages_cpp: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 controller_manager_msgs_generate_messages_cpp
-.PHONY : controller_manager_msgs_generate_messages_cpp
-
-# fast build rule for target.
-controller_manager_msgs_generate_messages_cpp/fast:
-	$(MAKE) -f flexrobot_description_pkg/CMakeFiles/controller_manager_msgs_generate_messages_cpp.dir/build.make flexrobot_description_pkg/CMakeFiles/controller_manager_msgs_generate_messages_cpp.dir/build
-.PHONY : controller_manager_msgs_generate_messages_cpp/fast
-
-#=============================================================================
-# Target rules for targets named controller_manager_msgs_generate_messages_lisp
-
-# Build rule for target.
-controller_manager_msgs_generate_messages_lisp: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 controller_manager_msgs_generate_messages_lisp
-.PHONY : controller_manager_msgs_generate_messages_lisp
-
-# fast build rule for target.
-controller_manager_msgs_generate_messages_lisp/fast:
-	$(MAKE) -f flexrobot_description_pkg/CMakeFiles/controller_manager_msgs_generate_messages_lisp.dir/build.make flexrobot_description_pkg/CMakeFiles/controller_manager_msgs_generate_messages_lisp.dir/build
-.PHONY : controller_manager_msgs_generate_messages_lisp/fast
-
-#=============================================================================
-# Target rules for targets named controller_manager_msgs_generate_messages_py
-
-# Build rule for target.
-controller_manager_msgs_generate_messages_py: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 controller_manager_msgs_generate_messages_py
-.PHONY : controller_manager_msgs_generate_messages_py
-
-# fast build rule for target.
-controller_manager_msgs_generate_messages_py/fast:
-	$(MAKE) -f flexrobot_description_pkg/CMakeFiles/controller_manager_msgs_generate_messages_py.dir/build.make flexrobot_description_pkg/CMakeFiles/controller_manager_msgs_generate_messages_py.dir/build
-.PHONY : controller_manager_msgs_generate_messages_py/fast
 
 #=============================================================================
 # Target rules for targets named demo_action_client
@@ -1819,8 +1871,9 @@ help:
 	@echo "... gazebo_msgs_generate_messages_cpp"
 	@echo "... gazebo_msgs_generate_messages_lisp"
 	@echo "... gazebo_msgs_generate_messages_py"
+	@echo "... gazebo_ros_api_plugin"
 	@echo "... gazebo_ros_gencfg"
-	@echo "... gazebo_tutorials"
+	@echo "... gazebo_ros_paths_plugin"
 	@echo "... geometry_msgs_generate_messages_cpp"
 	@echo "... geometry_msgs_generate_messages_lisp"
 	@echo "... geometry_msgs_generate_messages_py"
@@ -1839,6 +1892,7 @@ help:
 	@echo "... trajectory_msgs_generate_messages_cpp"
 	@echo "... trajectory_msgs_generate_messages_lisp"
 	@echo "... trajectory_msgs_generate_messages_py"
+	@echo "... gazebo_tutorials"
 	@echo "... count"
 	@echo "... hello"
 	@echo "... once"
@@ -1848,6 +1902,15 @@ help:
 	@echo "... set_bg_color"
 	@echo "... subpose"
 	@echo "... throttle"
+	@echo "... control_toolbox_gencfg"
+	@echo "... control_toolbox_generate_messages_cpp"
+	@echo "... control_toolbox_generate_messages_lisp"
+	@echo "... control_toolbox_generate_messages_py"
+	@echo "... controller_manager_msgs_generate_messages_cpp"
+	@echo "... controller_manager_msgs_generate_messages_lisp"
+	@echo "... controller_manager_msgs_generate_messages_py"
+	@echo "... default_robot_hw_sim"
+	@echo "... gazebo_ros_control"
 	@echo "... _flexrobot_description_pkg_generate_messages_check_deps_Demo_actionAction"
 	@echo "... _flexrobot_description_pkg_generate_messages_check_deps_Demo_actionActionFeedback"
 	@echo "... _flexrobot_description_pkg_generate_messages_check_deps_Demo_actionActionGoal"
@@ -1860,13 +1923,6 @@ help:
 	@echo "... bond_generate_messages_cpp"
 	@echo "... bond_generate_messages_lisp"
 	@echo "... bond_generate_messages_py"
-	@echo "... control_toolbox_gencfg"
-	@echo "... control_toolbox_generate_messages_cpp"
-	@echo "... control_toolbox_generate_messages_lisp"
-	@echo "... control_toolbox_generate_messages_py"
-	@echo "... controller_manager_msgs_generate_messages_cpp"
-	@echo "... controller_manager_msgs_generate_messages_lisp"
-	@echo "... controller_manager_msgs_generate_messages_py"
 	@echo "... demo_action_client"
 	@echo "... demo_action_server"
 	@echo "... demo_msg_publisher"

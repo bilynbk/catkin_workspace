@@ -318,104 +318,6 @@ bond_generate_messages_py/fast:
 .PHONY : bond_generate_messages_py/fast
 
 # Convenience name for target.
-flexrobot_description_pkg/CMakeFiles/control_toolbox_gencfg.dir/rule:
-	cd /home/bilynbk/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 flexrobot_description_pkg/CMakeFiles/control_toolbox_gencfg.dir/rule
-.PHONY : flexrobot_description_pkg/CMakeFiles/control_toolbox_gencfg.dir/rule
-
-# Convenience name for target.
-control_toolbox_gencfg: flexrobot_description_pkg/CMakeFiles/control_toolbox_gencfg.dir/rule
-.PHONY : control_toolbox_gencfg
-
-# fast build rule for target.
-control_toolbox_gencfg/fast:
-	cd /home/bilynbk/catkin_ws/build && $(MAKE) -f flexrobot_description_pkg/CMakeFiles/control_toolbox_gencfg.dir/build.make flexrobot_description_pkg/CMakeFiles/control_toolbox_gencfg.dir/build
-.PHONY : control_toolbox_gencfg/fast
-
-# Convenience name for target.
-flexrobot_description_pkg/CMakeFiles/control_toolbox_generate_messages_cpp.dir/rule:
-	cd /home/bilynbk/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 flexrobot_description_pkg/CMakeFiles/control_toolbox_generate_messages_cpp.dir/rule
-.PHONY : flexrobot_description_pkg/CMakeFiles/control_toolbox_generate_messages_cpp.dir/rule
-
-# Convenience name for target.
-control_toolbox_generate_messages_cpp: flexrobot_description_pkg/CMakeFiles/control_toolbox_generate_messages_cpp.dir/rule
-.PHONY : control_toolbox_generate_messages_cpp
-
-# fast build rule for target.
-control_toolbox_generate_messages_cpp/fast:
-	cd /home/bilynbk/catkin_ws/build && $(MAKE) -f flexrobot_description_pkg/CMakeFiles/control_toolbox_generate_messages_cpp.dir/build.make flexrobot_description_pkg/CMakeFiles/control_toolbox_generate_messages_cpp.dir/build
-.PHONY : control_toolbox_generate_messages_cpp/fast
-
-# Convenience name for target.
-flexrobot_description_pkg/CMakeFiles/control_toolbox_generate_messages_lisp.dir/rule:
-	cd /home/bilynbk/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 flexrobot_description_pkg/CMakeFiles/control_toolbox_generate_messages_lisp.dir/rule
-.PHONY : flexrobot_description_pkg/CMakeFiles/control_toolbox_generate_messages_lisp.dir/rule
-
-# Convenience name for target.
-control_toolbox_generate_messages_lisp: flexrobot_description_pkg/CMakeFiles/control_toolbox_generate_messages_lisp.dir/rule
-.PHONY : control_toolbox_generate_messages_lisp
-
-# fast build rule for target.
-control_toolbox_generate_messages_lisp/fast:
-	cd /home/bilynbk/catkin_ws/build && $(MAKE) -f flexrobot_description_pkg/CMakeFiles/control_toolbox_generate_messages_lisp.dir/build.make flexrobot_description_pkg/CMakeFiles/control_toolbox_generate_messages_lisp.dir/build
-.PHONY : control_toolbox_generate_messages_lisp/fast
-
-# Convenience name for target.
-flexrobot_description_pkg/CMakeFiles/control_toolbox_generate_messages_py.dir/rule:
-	cd /home/bilynbk/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 flexrobot_description_pkg/CMakeFiles/control_toolbox_generate_messages_py.dir/rule
-.PHONY : flexrobot_description_pkg/CMakeFiles/control_toolbox_generate_messages_py.dir/rule
-
-# Convenience name for target.
-control_toolbox_generate_messages_py: flexrobot_description_pkg/CMakeFiles/control_toolbox_generate_messages_py.dir/rule
-.PHONY : control_toolbox_generate_messages_py
-
-# fast build rule for target.
-control_toolbox_generate_messages_py/fast:
-	cd /home/bilynbk/catkin_ws/build && $(MAKE) -f flexrobot_description_pkg/CMakeFiles/control_toolbox_generate_messages_py.dir/build.make flexrobot_description_pkg/CMakeFiles/control_toolbox_generate_messages_py.dir/build
-.PHONY : control_toolbox_generate_messages_py/fast
-
-# Convenience name for target.
-flexrobot_description_pkg/CMakeFiles/controller_manager_msgs_generate_messages_cpp.dir/rule:
-	cd /home/bilynbk/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 flexrobot_description_pkg/CMakeFiles/controller_manager_msgs_generate_messages_cpp.dir/rule
-.PHONY : flexrobot_description_pkg/CMakeFiles/controller_manager_msgs_generate_messages_cpp.dir/rule
-
-# Convenience name for target.
-controller_manager_msgs_generate_messages_cpp: flexrobot_description_pkg/CMakeFiles/controller_manager_msgs_generate_messages_cpp.dir/rule
-.PHONY : controller_manager_msgs_generate_messages_cpp
-
-# fast build rule for target.
-controller_manager_msgs_generate_messages_cpp/fast:
-	cd /home/bilynbk/catkin_ws/build && $(MAKE) -f flexrobot_description_pkg/CMakeFiles/controller_manager_msgs_generate_messages_cpp.dir/build.make flexrobot_description_pkg/CMakeFiles/controller_manager_msgs_generate_messages_cpp.dir/build
-.PHONY : controller_manager_msgs_generate_messages_cpp/fast
-
-# Convenience name for target.
-flexrobot_description_pkg/CMakeFiles/controller_manager_msgs_generate_messages_lisp.dir/rule:
-	cd /home/bilynbk/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 flexrobot_description_pkg/CMakeFiles/controller_manager_msgs_generate_messages_lisp.dir/rule
-.PHONY : flexrobot_description_pkg/CMakeFiles/controller_manager_msgs_generate_messages_lisp.dir/rule
-
-# Convenience name for target.
-controller_manager_msgs_generate_messages_lisp: flexrobot_description_pkg/CMakeFiles/controller_manager_msgs_generate_messages_lisp.dir/rule
-.PHONY : controller_manager_msgs_generate_messages_lisp
-
-# fast build rule for target.
-controller_manager_msgs_generate_messages_lisp/fast:
-	cd /home/bilynbk/catkin_ws/build && $(MAKE) -f flexrobot_description_pkg/CMakeFiles/controller_manager_msgs_generate_messages_lisp.dir/build.make flexrobot_description_pkg/CMakeFiles/controller_manager_msgs_generate_messages_lisp.dir/build
-.PHONY : controller_manager_msgs_generate_messages_lisp/fast
-
-# Convenience name for target.
-flexrobot_description_pkg/CMakeFiles/controller_manager_msgs_generate_messages_py.dir/rule:
-	cd /home/bilynbk/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 flexrobot_description_pkg/CMakeFiles/controller_manager_msgs_generate_messages_py.dir/rule
-.PHONY : flexrobot_description_pkg/CMakeFiles/controller_manager_msgs_generate_messages_py.dir/rule
-
-# Convenience name for target.
-controller_manager_msgs_generate_messages_py: flexrobot_description_pkg/CMakeFiles/controller_manager_msgs_generate_messages_py.dir/rule
-.PHONY : controller_manager_msgs_generate_messages_py
-
-# fast build rule for target.
-controller_manager_msgs_generate_messages_py/fast:
-	cd /home/bilynbk/catkin_ws/build && $(MAKE) -f flexrobot_description_pkg/CMakeFiles/controller_manager_msgs_generate_messages_py.dir/build.make flexrobot_description_pkg/CMakeFiles/controller_manager_msgs_generate_messages_py.dir/build
-.PHONY : controller_manager_msgs_generate_messages_py/fast
-
-# Convenience name for target.
 flexrobot_description_pkg/CMakeFiles/demo_action_client.dir/rule:
 	cd /home/bilynbk/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 flexrobot_description_pkg/CMakeFiles/demo_action_client.dir/rule
 .PHONY : flexrobot_description_pkg/CMakeFiles/demo_action_client.dir/rule
@@ -1059,13 +961,6 @@ help:
 	@echo "... bond_generate_messages_cpp"
 	@echo "... bond_generate_messages_lisp"
 	@echo "... bond_generate_messages_py"
-	@echo "... control_toolbox_gencfg"
-	@echo "... control_toolbox_generate_messages_cpp"
-	@echo "... control_toolbox_generate_messages_lisp"
-	@echo "... control_toolbox_generate_messages_py"
-	@echo "... controller_manager_msgs_generate_messages_cpp"
-	@echo "... controller_manager_msgs_generate_messages_lisp"
-	@echo "... controller_manager_msgs_generate_messages_py"
 	@echo "... demo_action_client"
 	@echo "... demo_action_server"
 	@echo "... demo_msg_publisher"
